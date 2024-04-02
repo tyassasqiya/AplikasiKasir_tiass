@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="50b0af61-53ca-41e1-b85f-2b87196dbafb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from login]]>
+	</queryString>
+	<field name="LoginID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HakAkses" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="186" y="20" width="182" height="20" uuid="a7027a7f-db01-4f37-9fd0-21be1bb90670"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ebrima" size="14" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[DATA LAPORAN USER]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="33" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="100" height="32" uuid="1ad8e122-70ec-4892-b665-8670183c1f5e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="100" y="0" width="129" height="32" uuid="635c768e-9158-47ff-81dd-df551ef86624"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="229" y="0" width="163" height="32" uuid="c7ba7b0d-1dfa-4e5e-a610-ef63815b88f3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="392" y="0" width="163" height="32" uuid="8994d029-8683-4f68-8623-69adf9a26e28"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="32" uuid="c216a1f2-8dde-4239-80eb-0cd7db01f23e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Login ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="129" height="32" uuid="61cd5615-cf6a-41a9-9053-9e2faf124b90"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="0" width="163" height="32" uuid="84c17c5c-6a54-4287-ab29-ada43e045832"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="0" width="163" height="32" uuid="da792717-bc92-4c64-8bfb-4023e5ec6595"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hak Akses]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="100" height="32" uuid="a4191313-c4d6-4571-9690-3214da6c0062"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="100" y="0" width="129" height="32" uuid="413b27d5-6791-4924-83c3-afcf073e04ca"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="229" y="0" width="163" height="32" uuid="997be5c2-9e5a-4ce8-949c-c3a5357510bc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="392" y="0" width="163" height="32" uuid="2cb68971-b424-4228-b412-8ec046756aee"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="32" uuid="a2f5a030-2ba1-420d-a6c1-60afd01254d6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{LoginID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="129" height="32" uuid="6e9e5aaa-a556-4399-8729-7dde74d6aec3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="0" width="163" height="32" uuid="3865fe2e-6707-4af9-b1e9-270ecd1ebc3a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="392" y="0" width="163" height="32" uuid="a94412fd-0830-4792-9205-c2208d6b7eb4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{HakAkses}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115" splitType="Stretch">
+			<staticText>
+				<reportElement x="368" y="95" width="166" height="20" uuid="6fb5d04e-f157-43be-a551-38a67acce6a1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Comic Sans MS" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tias Sasqiya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="0" width="166" height="20" uuid="e5ae0909-2d8b-4873-a9ed-9f9063f6b705"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tasikmalaya, 20 Februari 2024]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="20" width="166" height="20" uuid="8a910958-d7e6-471a-b011-61f83618a178"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Manager,]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

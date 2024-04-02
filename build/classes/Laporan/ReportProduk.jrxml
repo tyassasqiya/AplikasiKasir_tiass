@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8edc1f1d-b5ef-46a8-b733-6e7d1f195ac1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from produk]]>
+	</queryString>
+	<field name="ProdukID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NamaProduk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Harga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="178" y="32" width="261" height="20" uuid="8094ed98-dd20-4d6f-8d5d-d8a47577636c"/>
+				<textElement>
+					<font fontName="Arial Black" size="14"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PRODUK]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="64" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="439" y="0" width="116" height="20" uuid="771a0beb-5ddb-40f2-8527-d1d02338490a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="313" y="0" width="126" height="20" uuid="db8ca771-cd45-47dd-9e78-4ad8e443891d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="114" y="0" width="199" height="20" uuid="09ee53ca-68d4-4f8f-980b-c04138624742"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="114" height="20" uuid="5ace3e5c-25f7-4948-88e5-84be277d732a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="114" height="20" uuid="e154375c-0f04-4a29-a80d-4db70717f868"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black"/>
+				</textElement>
+				<text><![CDATA[ID Produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="0" width="199" height="20" uuid="a186f885-e8f8-407e-a705-946c0414c8e0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black"/>
+				</textElement>
+				<text><![CDATA[Nama Produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="0" width="126" height="20" uuid="6cc30496-ef5e-4ee3-b322-9195c462a3e8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="439" y="0" width="116" height="20" uuid="b3ab149a-91bf-448a-8df1-fb78679f08b8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="439" y="0" width="116" height="20" uuid="cd8b178a-fd33-4cee-96a9-34b8b6cb4cf9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="313" y="0" width="126" height="20" uuid="d82efe19-88ec-4961-8ff7-255b4c637247"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="114" y="0" width="199" height="20" uuid="a07259e5-3779-45b8-9aa3-f5b618aee21b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="114" height="20" uuid="1665dc5a-5606-4f75-a557-a4424a7baa8c"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="114" height="20" uuid="7e083ce5-daff-40fa-9918-9f23f406e93c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ProdukID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="0" width="199" height="20" uuid="375fad1c-54c4-4715-ae22-10c6c0423411"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{NamaProduk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="313" y="0" width="126" height="20" uuid="90d4b0df-c61e-4fd7-ace0-1b0afc67d891"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="439" y="0" width="116" height="20" uuid="c5e81fa4-1d42-400f-92e6-7b489768d76e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Stok}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement x="368" y="10" width="164" height="20" uuid="da0f7449-4e80-4555-8a80-6f12e770c341"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tasikmalaya, 20 Februari 2024]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="30" width="164" height="20" uuid="9a2e009d-fef8-4773-bf54-7496e1d11e57"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Manager,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="73" width="164" height="20" uuid="2bb03738-79de-4f96-a029-a592fc43130d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Comic Sans MS" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tias Sasqiya]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="79" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
